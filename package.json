@@ -1,0 +1,42 @@
+{
+  "name": "@kreds/strategy-jwt",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "test": "jest",
+    "build": "tsc",
+    "lint": "eslint src"
+  },
+  "author": "Mat Sz <contact@matsz.dev>",
+  "license": "BSD-3-Clause-Clear",
+  "private": false,
+  "dependencies": {
+    "@kreds/types": "^0.0.1",
+    "jose": "^4.14.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kreds/strategy-jwt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kreds/strategy-jwt/issues"
+  },
+  "homepage": "https://github.com/kreds/strategy-jwt",
+  "devDependencies": {
+    "@types/node": "^20.8.2",
+    "typescript": "^5.2.2"
+  }
+}
